@@ -86,7 +86,7 @@ This runs `npm run build` first (via the `predeploy` script), then pushes the `d
 Your site will be live at:
 
 ```
-https://<your-username>.github.io/portland-piano/
+https://hayhurstpianostudio.com
 ```
 
 ---
