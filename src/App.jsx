@@ -91,6 +91,19 @@ export default function App() {
             piano for the first time or looking to refine your skills, I'd love
             to work with you.
           </p>
+          <p className="mt-4 max-w-2xl text-base leading-7 text-white/60">
+            I'm a Portland State University graduate with a bachelor's degree in
+            Computer Science. During my undergraduate studies, I completed an
+            apprenticeship under renowned piano teacher Marjorie Janove. It was
+            during this time that I discovered how much I truly love working
+            closely with students, helping them grow, and seeing their
+            confidence develop at the piano.
+          </p>
+          <img
+            src="/pianophoto.jpg"
+            alt="Piano studio"
+            className="mt-6 rounded-2xl max-w-2xl w-full object-cover"
+          />
         </section>
 
         <section id="approach" className="border-y border-white/10 bg-white/5">
@@ -142,7 +155,6 @@ export default function App() {
           </div>
         </section>
       </main>
-
     </div>
   );
 }
