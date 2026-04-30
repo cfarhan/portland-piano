@@ -1,5 +1,4 @@
-const BOOKING_FORM_URL =
-  "https://docs.google.com/forms/d/e/1FAIpQLSee_qCpXPnNxx4HI2LNzDxOSaxwed82nabkrhVeARH8T-oQrw/viewform";
+import { Link } from "react-router-dom";
 
 const highlights = [
   "Beginner to intermediate piano coaching",
@@ -15,14 +14,12 @@ export default function App() {
         <p className="text-lg font-semibold tracking-wide">
           Hayhurst Piano Studio
         </p>
-        <a
-          href={BOOKING_FORM_URL}
-          target="_blank"
-          rel="noreferrer"
+        <Link
+          to="/book"
           className="rounded-full bg-white px-4 py-2 text-sm font-medium text-black transition hover:bg-white/85"
         >
           Book your free first lesson
-        </a>
+        </Link>
       </header>
 
       <main>
@@ -135,23 +132,21 @@ export default function App() {
         <section id="contact" className="mx-auto max-w-6xl px-6 py-12">
           <h2 className="text-2xl font-semibold">Contact</h2>
           <p className="mt-4 max-w-xl text-base leading-7 text-white/60">
-            The button below will take you to a Google Form where you can book
-            your first lesson. You can also contact me via email or call/text if
-            you prefer.
+            The button below opens the calendar where you can book your first
+            lesson. You can also contact me via email or call/text if you
+            prefer.
           </p>
           <div className="mt-3 flex flex-col gap-1 text-base text-white/60">
             <span>Email: farhanpianostudio@gmail.com</span>
             <span>Phone: (503) 880-5655</span>
           </div>
           <div className="mt-6 flex flex-wrap gap-4">
-            <a
-              href={BOOKING_FORM_URL}
-              target="_blank"
-              rel="noreferrer"
+            <Link
+              to="/book"
               className="rounded-full bg-white px-5 py-3 text-sm font-semibold text-black transition hover:bg-white/85"
             >
               Book your free first lesson
-            </a>
+            </Link>
           </div>
         </section>
       </main>
